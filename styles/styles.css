@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Work Sans', sans-serif;
+    background: #FFF;
+}
+
+header {
+    background: rgba(255, 144, 14, 0.10);
+    padding: 40px 100px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+nav ul li {
+    list-style: none;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #424242;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+nav h3 {
+    color: #131313;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.banner {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.banner_content {
+    max-width: 560px;
+    margin: 0 auto;
+}
+
+.banner_title {
+    color: #131313;
+    font-size: 3rem;
+    font-weight: 700;
+
+}
+
+.banner_description {
+    margin-top: 20px;   
+    color: #727272;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.btn_primery {
+    margin-top: 20px;
+    color: #FFF;
+    padding: 15px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    border-radius: 8px;
+    background: #FF900E;
+    border: none;
+}
+
+.banner_img {
+    margin-top: 20px;
+    width: 100%;
+}
+
+main{
+    padding: 40px 100px;
+}
+
+.features{
+    display: flex;
+    align-items: center;
+}
+.features_item1 img{
+    width: 100%;
+}
+.features_item1{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    flex: 1;
+    gap: 1rem;
+}
+.features_item2{
+    flex: 1;
+    padding-left: 100px;
+    /* padding-right: 30px; */
+}
+.features_title{
+    color: #727272;
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+.sp1{
+    color: #131313;
+}
+.sp2{
+    color: #FF900E;
+}
+.features_description{
+    color: #727272;
+}
+
+@media screen and (max-width: 576px) {
+    nav{
+        flex-direction: column;
+    }
+    header, main{
+        padding: 20px 50px;
+    }
+    .features{
+        flex-direction: column;
+    }
+    .features_item2{
+        padding-left: 30px;
+    }
+    .features_item1{
+        grid-template-columns: 1fr;
+    }
+}
